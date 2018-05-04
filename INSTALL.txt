@@ -1,0 +1,31 @@
+
+==============  Use statically compiled programs directly =============
+
+chmod 755 bin/FxTools_Linux
+./bin/FxTools_Linux
+
+========================================================================
+
+A
+Pre-installations of 4 libraries are required before installig FxTools  
+1 htslib: samtools-1.6/htslib-1.6
+2 boost : boost with g++ > 4.8+ is recommended  
+3 zlib : zlib > 1.2.3 is recommended 
+4 ncurses: ncurses >5.7 is recommended
+you can use the  [./configure] to check the libray and header
+
+B
+To compile FxTools, do [configure] and than [make]
+Final software can be found in the direcoty [bin/FxTools]
+
+For linux /Unix
+tar -zxvf  FxTools-XXX.tar.gz
+cd FxTools-XXX;                             
+cd src;                                     
+./configure
+#  you can usr the  usr the  LDFLAGS  to find the htslib library  and  CPPFLAGS  to find the htslib header
+#  ./configure LDFLAGS=-L/usr/lib/ CPPFLAGS=-I/usr/include/
+make ;
+../bin/FxTools
+
+========================================================================

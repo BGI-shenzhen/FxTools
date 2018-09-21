@@ -68,7 +68,7 @@ Version: 0.16   hewm2008@gmail.com/xuxiaomin@bgi.com     2018-5-20
 |       |rand           |randomly sample FASTA by proportion                               |
 | Search|               |                                                                  |
 |       |findN          |find the regions of N in FASTA file                               |
-|       locate          |find the region containing the subsequences                       |
+|       |locate         |find the region containing the subsequences                       |
 |       |grep           |search for the target subsequence                                 |
 |       |extractP       |extract sequences with specific ID                                |
 |       |extractN       |extract sequences by specified order range                        |

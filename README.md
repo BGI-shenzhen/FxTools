@@ -13,7 +13,7 @@ FxTools is implemented in C/C++ language, available for Linux and Mac OS X opera
   </br> 4 ncurses: [ncurses](https://www.gnu.org/software/ncurses/)  >5.7 is recommended
 
  For <b>linux /Unix </b>  statics 
-- you can use the statically compiled programs directly 
+- you can use the <b>statically compiled programs directly </b>
      
  <pre>
        git clone https://github.com/BGI-shenzhen/FxTools.git
@@ -35,6 +35,8 @@ FxTools is implemented in C/C++ language, available for Linux and Mac OS X opera
         mv FxTools bin/;
 	./bin/FxTools
 </pre>
+**Note1:** If fail in [./configure], to find library **_htslib_**, you can add LDFLAGS to find the htslib library and <b>CXXFLAGS</b> and CFLAGS to find the htslib header [ ./configure LDFLAGS=-L/usr/lib/ <b>CXXFLAGS=-I/usr/include/</b> CFLAGS=-I/usr/include/];
+</br>  export 'LIBRARY/CFLAGS/CXXFLAGS' environment variables to set the htslib path also can be a way to compile, such : export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH;
 
 
 ### 2) Features 

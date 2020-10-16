@@ -13,7 +13,7 @@
 ## -------------------- ##
 ## M4sh Initialization. ##
 ## -------------------- ##
-
+chmod 755 bin/*
 # Be more Bourne compatible
 DUALCASE=1; export DUALCASE # for MKS sh
 if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then :
@@ -7136,4 +7136,22 @@ if test -n "$ac_unrecognized_opts" && test "$enable_option_checking" != no; then
   { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: unrecognized options: $ac_unrecognized_opts" >&5
 $as_echo "$as_me: WARNING: unrecognized options: $ac_unrecognized_opts" >&2;}
 fi
+
+sed   's#\$(AUTOCONF)#\$(AUTOCONF) \&\&  echo chmod 755 bin/\\\*  \>\>  \$(top_srcdir)/configure #'  Makefile  > Makefile.tmp
+mv   Makefile.tmp  Makefile
+chmod 755 bin/*
+echo  Detection system platform  is
+if [ "$(uname)" == "Darwin" ];then
+        echo MacOS
+	sed   's/libboost_thread/libboost_thread-mt/g'  Makefile  >  Makefile.tmp
+	mv  Makefile.tmp  Makefile
+        # Mac OS
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ];then
+        echo Linux
+        # GNU/Linux
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ];then
+        echo windows sys no run this
+# Windows NT
+fi
+
 

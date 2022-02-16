@@ -5,7 +5,10 @@
 FxTools is implemented in C/C++ language, available for Linux and Mac OS X operating system. 
 ###  1) Download and Install
 ------------
-  <b> [Download](https://github.com/BGI-shenzhen/FxTools/archive/v0.17.tar.gz) </b>
+The <b>new version</b> will be updated and maintained in <b>[hewm2008/FxTools](https://github.com/hewm2008/FxTools)</b>, please click below website to download the latest version
+</br><p align="center"><b>[hewm2008/FxTools](https://github.com/hewm2008/FxTools)</b></p>
+
+  <b> [Download](https://github.com/hewm2008/FxTools/archive/v0.17.tar.gz) </b>
   </br> </br> Pre-installations of 4 libraries are required before installing FxTools
   </br> 1 htslib: [samtools-1.6/htslib-1.6](https://sourceforge.net/projects/samtools/files/samtools)
   </br> 2 boost : [boost](http://www.boost.org/) with [g++](https://gcc.gnu.org/) > 4.9 is recommended
@@ -16,7 +19,7 @@ FxTools is implemented in C/C++ language, available for Linux and Mac OS X opera
 - you can use the <b>statically compiled programs directly </b>
      
  <pre>
-       git clone https://github.com/BGI-shenzhen/FxTools.git
+       git clone https://github.com/hewm2008/FxTools.git
        cd FxTools-XXX;  
        chmod 775 bin/FxTools_Linux ; 
        ./bin/FxTools_Linux
@@ -28,7 +31,7 @@ FxTools is implemented in C/C++ language, available for Linux and Mac OS X opera
 
  For <b>linux/Unix </b> or <b>MacOS</b>
 <pre>
-        git clone https://github.com/BGI-shenzhen/FxTools.git
+        git clone https://github.com/hewm2008/FxTools.git
         cd FxTools-XXX;
         chmod 755 configure ; ./configure
         make ;
@@ -124,7 +127,7 @@ Version: 0.16   hewm2008@gmail.com/xuxiaomin@bgi.com     2018-5-20
 ### 3) Examples
 ------------
 
-see more other Usage in the <b>[Manual Documentation](https://github.com/BGI-shenzhen/FxTools/blob/master/Manual.pdf)</b>
+see more other Usage in the <b>[Manual Documentation](https://github.com/hewm2008/FxTools/blob/master/Manual.pdf)</b>
 
 * 1) sort fa files
 ```
@@ -158,7 +161,7 @@ see more other Usage in the <b>[Manual Documentation](https://github.com/BGI-she
 	./FxTools  Fqtools   changeQ   -i in.fq.gz   -o out.fq  -s 4 
 ```
 
-see more other Usage in the <b>[Documentation](https://github.com/BGI-shenzhen/FxTools/blob/master/Manual.pdf)</b>
+see more other Usage in the <b>[Documentation](https://github.com/hewm2008/FxTools/blob/master/Manual.pdf)</b>
 
 ### 4) Format
 ------------
@@ -172,7 +175,7 @@ Format Introduction
 
 ### 5) discussion
 ------------
-- [:email:](https://github.com/BGI-shenzhen/FxTools) hewm2008@gmail.com / hewm2008@qq.com / xuxiaomin@bgi.com
+- [:email:](https://github.com/hewm2008/FxTools) hewm2008@gmail.com / hewm2008@qq.com / xuxiaomin@bgi.com
 - join the<b><i> QQ Group : 125293663</b></i>
 
 
